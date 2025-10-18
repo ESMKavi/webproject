@@ -1,0 +1,415 @@
+/* General Styling */
+:root {
+    --primary-color: #0d6efd; /* Bootstrap Blue */
+    --secondary-color: #6c757d; /* Bootstrap Gray */
+    --light-gray: #f8f9fa;
+    --dark-color: #212529;
+    --text-color: #333;
+    --font-family: 'Poppins', sans-serif; /* A more modern font - include from Google Fonts if you like */
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-color: #fff;
+    color: var(--text-color);
+}
+
+/* Header & Navigation */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+    height: 90vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Section Styling */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Services Section */
+.service-card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 30px;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.service-card .icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Stats Counter Section */
+.stats-section {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.stat-item h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background-color: var(--light-gray);
+}
+.testimonial-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+.testimonial-card p {
+    font-style: italic;
+}
+.testimonial-card .author {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 15px;
+}
+
+/* Dashboard Styling */
+.dashboard-page {
+    background-color: var(--light-gray);
+    min-height: 100vh;
+}
+.dashboard-header {
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+.stat-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.stat-card .card-body {
+    display: flex;
+    align-items: center;
+}
+.stat-card .icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+.stat-card .stat-text {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #6c757d;
+}
+.stat-card .stat-number {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.chart-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Form Pages */
+.form-page-container {
+    max-width: 800px; /* Default max-width */
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 40px auto;
+}
+
+/* Tabbed Interface */
+.nav-tabs .nav-link.active {
+    font-weight: bold;
+}
+.tab-content {
+    border: 1px solid #dee2e6;
+    border-top: 0;
+    padding: 1.5rem;
+    border-radius: 0 0 .375rem .375rem;
+    background-color: #fff; /* Added background for tabs */
+}
+.form-section-title {
+    background-color: #e9ecef;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: var(--dark-color);
+    font-weight: 500;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+/* New Layout Styles for Footer */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto; /* This makes the main content area grow */
+}
+
+.site-footer {
+    flex-shrink: 0; /* This prevents the footer from shrinking */
+}
+
+/* New Class for the Header Logo */
+.navbar-logo {
+    height: 45px; /* Adjusted height */
+    margin-right: 10px;
+}
+
+
+/* Homepage Styles V2 */
+body.homepage {
+    font-family: 'Poppins', sans-serif;
+}
+.homepage-header .navbar {
+    transition: background-color 0.3s ease;
+}
+.homepage-header .navbar-brand img {
+    height: 40px;
+}
+
+
+/* Homepage Styles (A-1 Inspired) */
+body.homepage {
+    background-color: #f8f9fa; /* Light grey background for content */
+}
+#page-background {
+    position: fixed; /* Stays in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    z-index: -1; /* Sits BEHIND all other content */
+    background-image: url('../images/background.jpg'); /* Adjusted path */
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease-out, background-image 0.5s ease-in-out;
+}
+.navbar.fixed-top {
+    background-color: transparent;
+    transition: background-color 0.4s ease-in-out;
+    padding: 1rem 0;
+}
+.navbar.fixed-top.scrolled {
+    background-color: rgba(33, 37, 41, 0.75); /* Dark, but semi-transparent */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 0.5rem 0;
+}
+.navbar.fixed-top .navbar-brand img { /* Specificity for fixed top */
+    height: 50px;
+    transition: height 0.4s ease-in-out;
+}
+.navbar.scrolled .navbar-brand img {
+    height: 40px;
+}
+.navbar .btn-primary {
+    border-radius: 50px;
+    padding: 8px 24px;
+    font-weight: 500;
+}
+.hero-section {
+    position: relative;
+    padding: 12rem 0;
+    color: white;
+}
+.hero-section .overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%);
+}
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 0 2px 15px rgba(0,0,0,0.4);
+}
+.hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+.hero-buttons .btn {
+    font-size: 1.1rem;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: 500;
+    margin-right: 1rem;
+}
+.section {
+    padding: 6rem 0;
+}
+.section-title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.section-subtitle {
+    color: #6c757d;
+    margin-bottom: 4rem;
+}
+.feature-item {
+    transition: transform 0.3s ease;
+}
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+.feature-icon {
+    font-size: 3rem;
+    color: #0d6efd; /* Bootstrap Primary Blue */
+}
+.section.bg-light {
+    background-color: transparent !important; /* Make services transparent */
+}
+.service-card {
+    border: 1px solid #e9ecef;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white */
+    backdrop-filter: blur(5px);
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+}
+.service-card .card-header {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: 500;
+}
+.cta-section {
+    background-color: rgba(52, 58, 64, 0.9); /* Semi-transparent dark */
+    backdrop-filter: blur(5px);
+    color: white;
+}
+.homepage-footer {
+    background-color: #212529;
+}
+
+/* Profile Picture Styles */
+#camera-container, #camera-container-modal { /* Apply to both containers */
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    position: relative;
+    min-height: 240px; /* Adjust as needed */
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide parts of video/image if they overflow */
+}
+#video-feed, #video-feed-modal {
+    display: block;
+    width: 100%; /* Make video fill container width */
+    height: auto;
+    max-height: 300px; /* Optional: Limit height */
+}
+#photo-preview, #photo-preview-modal {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; /* Optional: Limit height */
+}
+.camera-overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #6c757d;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 10px;
+}
+.profile-picture-display {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px; /* Slightly rounded corners */
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+}

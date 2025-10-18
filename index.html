@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Sriyani Driving School</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="homepage">
+
+    <div id="page-background"></div>
+
+    <header class="homepage-header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/logo.png" alt="Logo" id="navbar-logo" class="navbar-logo">
+                    <span class="ms-2 fw-bold fs-4">Sriyani Driving School</span>
+                </a>
+                <div class="ms-auto d-flex align-items-center">
+                    <a href="login.php" class="nav-link text-white me-4">Staff Login</a>
+                    <a href="register.html" class="btn btn-primary">Register Now</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="overlay"></div>
+            <div class="container text-start">
+                <h1 class="hero-title">Become a Safe and <br>Confident Driver</h1>
+                <p class="hero-subtitle">With licensed instructors and modern vehicles, we provide the best driving education to help you succeed.</p>
+                <div class="hero-buttons">
+                    <a href="register.html" class="btn btn-primary">Get Started</a>
+                    <a href="#services" class="btn btn-outline-light">Our Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-title">Why Choose Sriyani Driving School?</h2>
+                    <p class="lead section-subtitle">We are committed to providing the highest quality driver training.</p>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-4 text-center feature-item">
+                        <div class="feature-icon mb-3"><i class="bi bi-patch-check-fill"></i></div>
+                        <h5 class="fw-bold">DMV Licensed Instructors</h5>
+                        <p class="text-muted">Learn from the best. Our instructors are experienced, patient, and certified.</p>
+                    </div>
+                    <div class="col-md-4 text-center feature-item">
+                        <div class="feature-icon mb-3"><i class="bi bi-car-front-fill"></i></div>
+                        <h5 class="fw-bold">Modern, Safe Vehicles</h5>
+                        <p class="text-muted">Train in our fleet of modern, dual-controlled vehicles for your safety and comfort.</p>
+                    </div>
+                    <div class="col-md-4 text-center feature-item">
+                        <div class="feature-icon mb-3"><i class="bi bi-calendar2-week-fill"></i></div>
+                        <h5 class="fw-bold">Flexible Scheduling</h5>
+                        <p class="text-muted">Our convenient online system makes it easy to manage your training sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light" id="services">
+            <div class="container">
+                 <div class="text-center">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="lead section-subtitle">We offer a variety of packages to suit your needs.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 d-flex align-items-stretch">
+                        <div class="card service-card w-100">
+                            <div class="card-header text-center p-3"><h4>Student Management</h4></div>
+                            <div class="card-body p-4">
+                                <p>Our system provides a complete digital record for every student. Track payments, attendance, trial results, and license status all in one secure place.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-stretch">
+                         <div class="card service-card w-100">
+                            <div class="card-header text-center p-3"><h4>Group Training</h4></div>
+                            <div class="card-body p-4">
+                                <p>Manage group theory classes and training sessions efficiently. Instructors can use our QR code system for instant and accurate attendance marking.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex align-items-stretch">
+                         <div class="card service-card w-100">
+                            <div class="card-header text-center p-3"><h4>Reporting & Analytics</h4></div>
+                            <div class="card-body p-4">
+                                <p>Generate powerful, professional reports. Filter student data by payment status, license progress, and more, then export to Excel for analysis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section text-center py-5">
+            <div class="container">
+                <h2 class="fw-bold">Ready to Start Your Driving Journey?</h2>
+                <p class="lead my-4">Register online today and take the first step towards getting your license.</p>
+                <a href="register.html" class="btn btn-primary btn-lg rounded-pill">Register Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="homepage-footer text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Sriyani DS-IT Department. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/homepage.js"></script>
+</body>
+</html>

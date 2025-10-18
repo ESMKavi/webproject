@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Registration - Sriyani Driving School</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .form-page-container {
+            max-width: 800px;
+            background-color: #fff;
+            padding: 2rem 3rem;
+            border-radius: 1rem;
+            box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Logo" class="navbar-logo">
+                <span class="ms-2 fw-bold">Sriyani Driving School</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="py-5">
+        <div class="container form-page-container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">New Student Online Registration</h2>
+                <p class="text-muted">Please fill out the form below. A staff member will review your application and contact you soon.</p>
+            </div>
+            
+            <form action="process_registration.php" method="POST" id="registrationForm">
+                <h5 class="mb-3 border-bottom pb-2">Personal Information</h5>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="id_number" class="form-label">ID Number:</label>
+                    <input type="text" class="form-control" id="id_number" name="id_number" required>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Permanent Address:</label>
+                    <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="phone_number" class="form-label">Phone Number:</label>
+                        <input type="tel" class="form-control" id="phone_number" name="phone_number" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="age" class="form-label">Age:</label>
+                        <input type="number" class="form-control" id="age" name="age" required min="17">
+                        <div class="form-text">You must be at least 17 years old to register.</div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="customer_email" class="form-label">Email Address:</label>
+                    <input type="email" class="form-control" id="customer_email" name="customer_email" required>
+                </div>
+
+                <h5 class="mb-3 mt-4 border-bottom pb-2">Appointment Details</h5>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="branch" class="form-label">Preferred Branch:</label>
+                        <select class="form-select" id="branch" name="branch" required>
+                            <option value="">-- Select a Branch --</option>
+                            <option value="Angunukolapalassa">Angunukolapalassa</option>
+                            <option value="Ambalantota">Ambalantota</option>
+                            <option value="Ranna">Ranna</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="appointment_date" class="form-label">Preferred Date to Visit Branch:</label>
+                        <input type="date" class="form-control" id="appointment_date" name="appointment_date" required>
+                    </div>
+                </div>
+                
+                <div class="d-grid mt-4">
+                    <button type="submit" class="btn btn-primary btn-lg">Submit Registration</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer class="mt-auto bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 Sriyani DS-IT Department. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

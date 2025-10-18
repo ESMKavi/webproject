@@ -1,0 +1,115 @@
+Open generate_hash.php and paste this exact code into it:
+code
+PHP
+
+
+
+<?php
+
+// The password you want to use
+$passwordToHash = 'admin123';
+
+// Generate the new hash using your current PHP version's default algorithm
+$newHash = password_hash($passwordToHash, PASSWORD_DEFAULT);
+
+// Print the new hash to the screen
+echo "<h1>New Password Hash</h1>";
+echo "<p>Your password is: <strong>" . htmlspecialchars($passwordToHash) . "</strong></p>";
+echo "<p>Copy this new hash value below:</p>";
+echo "<textarea rows='3' cols='70' readonly>" . htmlspecialchars($newHash) . "</textarea>";
+
+?>
+
+
+
+Username: admin
+Password: admin123
+
+Change the password inside the file from admin123 to staff123.
+
+<?php
+
+// The password you want to use
+$passwordToHash = 'staff123'; // <-- CHANGE THIS
+
+// ... (the rest of the code is the same) ...
+$newHash = password_hash($passwordToHash, PASSWORD_DEFAULT);
+echo "<h1>New Password Hash for angun_staff</h1>"; // (Optional: change title for clarity)
+echo "<p>Your password is: <strong>" . htmlspecialchars($passwordToHash) . "</strong></p>";
+echo "<p>Copy this new hash value below:</p>";
+echo "<textarea rows='3' cols='70' readonly>" . htmlspecialchars($newHash) . "</textarea>";
+
+?>
+
+Change the password inside the file from staff123 to staff456.
+
+
+<?php
+
+// The password you want to use
+$passwordToHash = 'staff456'; // <-- CHANGE THIS
+
+// ... (the rest of the code is the same) ...
+$newHash = password_hash($passwordToHash, PASSWORD_DEFAULT);
+echo "<h1>New Password Hash for ambal_staff</h1>"; // (Optional: change title for clarity)
+echo "<p>Your password is: <strong>" . htmlspecialchars($passwordToHash) . "</strong></p>";
+echo "<p>Copy this new hash value below:</p>";
+echo "<textarea rows='3' cols='70' readonly>" . htmlspecialchars($newHash) . "</textarea>";
+
+?>
+
+
+<?php
+
+// The password you want to use
+$passwordToHash = 'staff789'; // <-- CHANGE THIS
+
+// ... (the rest of the code is the same) ...
+$newHash = password_hash($passwordToHash, PASSWORD_DEFAULT);
+echo "<h1>New Password Hash for ranna_staff</h1>"; // (Optional: change title for clarity)
+echo "<p>Your password is: <strong>" . htmlspecialchars($passwordToHash) . "</strong></p>";
+echo "<p>Copy this new hash value below:</p>";
+echo "<textarea rows='3' cols='70' readonly>" . htmlspecialchars($newHash) . "</textarea>";
+
+?>
+
+
+
+
+
+
+
+
+<?php
+
+// The password you want to use
+$passwordToHash = 'staff456'; // <-- CHANGE THIS
+
+// ... (the rest of the code is the same) ...
+$newHash = password_hash($passwordToHash, PASSWORD_DEFAULT);
+echo "<h1>New Password Hash for ambal_staff</h1>";
+// ... (rest of the echo statements) ...
+
+?>
+
+
+Change the password inside the file from staff456 to staff789.
+
+<?php
+
+// The password you want to use
+$passwordToHash = 'staff789'; // <-- CHANGE THIS
+
+// ... (the rest of the code is the same) ...
+$newHash = password_hash($passwordToHash, PASSWORD_DEFAULT);
+echo "<h1>New Password Hash for ranna_staff</h1>";
+// ... (rest of the echo statements) ...
+
+?>
+
+
+Save the file.
+Refresh the page in your browser.
+Copy the final new hash.
+Go to phpMyAdmin, find the user ranna_staff, and Edit the record.
+Paste the new hash into the password field and save.
